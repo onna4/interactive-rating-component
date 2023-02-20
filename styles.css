@@ -43,7 +43,7 @@ main .one, main .two{
 .two {
     text-align: center;
     padding-top: 1em;
-    /* display: none; */
+    display: none;
 }
 main h1 {
     color: var(--White);

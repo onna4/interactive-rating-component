@@ -12,8 +12,8 @@ userrating.addEventListener('click', function() {
 })
 
 button.addEventListener('click', function () {
-        maincard.style.display = 'none;';
-        thxcard.style.display = 'block';
+        maincard[0].style.display = 'none;';
+        thxcard[0].style.display = 'block';
 
     });
 
