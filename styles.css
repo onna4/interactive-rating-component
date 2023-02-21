@@ -2,7 +2,6 @@
     font-size: 11px;
     text-align: center;
     color:white;
-    margin: 2rem;
     }
 .attribution a {
     color: hsl(228, 45%, 44%);
@@ -28,10 +27,9 @@
 body {
     background-color: var(--Very-Dark-Blue);
     font-family: var(--Overpass-font);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 100vh;
+    display: grid;
+    place-content: center;
 }
 .fa-star {
     color: var(--Orange);
@@ -52,10 +50,6 @@ main #maincard, main #thxcard{
     text-align: center;
     padding-top: 1em;
     display: none;
-}
-main {
-    display: flex;
-    flex-direction: column;
 }
 main h1 {
     color: var(--White);
