@@ -1,3 +1,13 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color:white;
+    margin: 2rem;
+    }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 :root {
     /* Primary colors */
     --Orange: hsl(25, 97%, 53%);
@@ -18,32 +28,34 @@
 body {
     background-color: var(--Very-Dark-Blue);
     font-family: var(--Overpass-font);
-}
-.fa-star {
-    color: var(--Orange);
-    padding: 1em;
-}
-main {
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-main .one, main .two{
+.fa-star {
+    color: var(--Orange);
+    padding: .7em;
+}
+main #maincard, main #thxcard{
     background-color: var(--Dark-Blue);
-    width: 18em;
+    width: 21em;
     height: 23em;
     padding: 1em;
     margin: 1em;
     border-radius: 12px;
 }
-.one {
+#maincard {
     display: block;
 }
-.two {
+#thxcard {
     text-align: center;
     padding-top: 1em;
     display: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
 }
 main h1 {
     color: var(--White);
@@ -54,37 +66,50 @@ main p {
     padding: 0 .3em 1em;
     font-size: 0.9em;
 }
-main div {
+main .rating {
     color: var(--Light-Grey);
-    margin: .2em auto;
-    padding: 0.8em;
+    margin: .3em auto;
+    padding: 1.2em;
     text-align: center;
     cursor: pointer;
 }
-main div, .fa-star {
+main .rating, .fa-star {
     border: 1px solid var(--Medium-Grey);
     border-radius: 50%;
     background-color: var(--Medium-Grey);
 }
-button {
+#submit {
+    font-family: inherit;
     background-color: var(--Orange);
     color: var(--White);
     height: 3em;
-    width:19em;
+    width:18rem;
     border-radius: 19px;
     margin: 1.4em .3em;
-    font-size: 0.8rem;
+    font-size: .9rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+#submit:hover {
+    color: var(--Orange);
+    background-color: var(--White);
 }
 #rating-comp {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: .6em 0;
 }
-#rating-comp div:hover{
+#rating-comp button:hover{
     background-color: var(--Orange);
     color: var(--White);
 }
-.two .ratetext {
+#rating-comp button:focus {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+#thxcard .ratetext {
     color: var(--Orange);
     margin: 1em;
     border: 1px solid var(--Medium-Grey);
@@ -92,7 +117,7 @@ button {
     border-radius: 15px;
     padding: .5em 0;
 }
-.two img {
+#thxcard img {
     height: 100px;
     margin: .5em auto;
 }

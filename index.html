@@ -14,16 +14,11 @@
 
   <title>Interactive rating component</title>
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; color:white; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <main>
-    <section class="one">
+    <section id="maincard">
     <!-- Rating state start -->
     <i class="fa-solid fa-star"></i>
 
@@ -33,22 +28,22 @@
     to help us improve our offering!</p>
 
     <section id="rating-comp">
-      <div class="rating" >1</div>
-      <div class="rating">2</div>
-      <div class="rating" >3</div>
-      <div class="rating" >4</div>
-      <div class="rating">5</div>
+      <button class="rating" >1</button>
+      <button class="rating">2</button>
+      <button class="rating" >3</button>
+      <button class="rating" >4</button>
+      <button class="rating">5</button>
     </section>
 
     <button id="submit" type="submit">Submit</button>
 
     <!-- Rating state end -->
     </section>
-    <section class="two">
+    <section id="thxcard">
     <!-- Thank you state start -->
 
-      <img src="images/illustration-thank-you.svg" >
-      <p class="ratetext">You selected <span>1</span> out of 5</p>
+      <img src="images/illustration-thank-you.svg" alt="POS machine" >
+      <p class="ratetext">You selected <span id="chosenrating"></span> out of 5</p>
       <h1>Thank you!</h1>
       <p>We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!</p>

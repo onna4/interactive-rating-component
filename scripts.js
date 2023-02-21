@@ -1,19 +1,25 @@
-"use strict";
-
+let thxcard = document.getElementById('thxcard');
+let maincard = document.getElementById('maincard');
+let submitbutton = document.getElementById('submit');
 let userrating = document.querySelectorAll('.rating');
-let button = document.getElementById('submit');
-let thxcard = document.getElementsByClassName('two');
-let maincard = document.getElementsByClassName('one');
-let chosenrating = document.getElementsByTagName('span');
-let urating;
 
-userrating.addEventListener('click', function() {
-    chosenrating.innerHTML = userrating.innerHTML;
+let chosenrating = document.getElementById('chosenrating');
+
+userrating.forEach((urating) => {
+    urating.addEventListener('click', () => {
+            chosenrating.innerHTML = urating.innerHTML;
+        })
 })
 
-button.addEventListener('click', function () {
-        maincard[0].style.display = 'none;';
-        thxcard[0].style.display = 'block';
+submitbutton.addEventListener('click', function () {
+    maincard.style.display = 'none';
+    thxcard.style.display = 'block';
 
-    });
+});
+
+thxcard.addEventListener('click', function () {
+    maincard.style.display = 'block';
+    thxcard.style.display ='none';
+
+});
 
