@@ -31,10 +31,6 @@ body {
     display: grid;
     place-content: center;
 }
-.fa-star {
-    color: var(--Orange);
-    padding: .7em;
-}
 main #maincard, main #thxcard{
     background-color: var(--Dark-Blue);
     width: 21em;
